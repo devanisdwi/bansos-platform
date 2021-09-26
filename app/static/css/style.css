@@ -13,7 +13,12 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -182,7 +187,8 @@ span {
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -194,12 +200,16 @@ span {
   transition: 0.3s;
   letter-spacing: 0;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #71c55d;
 }
 .navbar .dropdown ul {
@@ -227,7 +237,9 @@ span {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #71c55d;
 }
 .navbar .dropdown:hover > ul {
@@ -308,15 +320,19 @@ span {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #222;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #71c55d;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -339,7 +355,9 @@ span {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #71c55d;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -1034,11 +1052,15 @@ section {
 /* Newsletter Section
 --------------------------------*/
 #newsletter {
-  background: rgba(0, 0, 0, 0) url(../img/newsletter-bg.jpg) no-repeat center top fixed;
+  background: rgba(0, 0, 0, 0) url(../img/newsletter-bg.jpg) no-repeat center
+    top fixed;
   background-size: cover;
 }
 #newsletter .overlay {
-  background: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 95%);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 95%
+  );
   height: 100%;
   width: 100%;
 }
@@ -1203,12 +1225,14 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-#contact .php-email-form input, #contact .php-email-form textarea {
+#contact .php-email-form input,
+#contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
-#contact .php-email-form input:focus, #contact .php-email-form textarea:focus {
+#contact .php-email-form input:focus,
+#contact .php-email-form textarea:focus {
   border-color: #71c55d;
 }
 #contact .php-email-form input {
@@ -1217,14 +1241,14 @@ section {
 #contact .php-email-form textarea {
   padding: 12px 15px;
 }
-#contact .php-email-form button[type=submit] {
+#contact .php-email-form button[type="submit"] {
   background: #71c55d;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
-#contact .php-email-form button[type=submit]:hover {
+#contact .php-email-form button[type="submit"]:hover {
   background: #92d283;
 }
 @-webkit-keyframes animate-loading {
@@ -1248,7 +1272,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #2a2c30;
+  /* background: #2a2c30; */
   padding-top: 50px;
 }
 .footer .footer-logo .navbar-brand {
@@ -1281,11 +1305,12 @@ section {
 }
 .footer .copyrights {
   background: #fff;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: center;
   padding: 25px;
 }
-.footer .copyrights p, .footer .copyrights .credits {
+.footer .copyrights p,
+.footer .copyrights .credits {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -1293,7 +1318,61 @@ section {
   font-size: 14px;
   letter-spacing: 0;
 }
-.footer .copyrights p a, .footer .copyrights .credits a {
+.footer .copyrights p a,
+.footer .copyrights .credits a {
   letter-spacing: 0;
+  color: #71c55d;
+}
+
+/* dropbox */
+#drop-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drag-area {
+  border: 2px dashed rgb(207, 207, 207);
+  height: 500px;
+  width: 1000px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active {
+  border: 2px solid rgb(170, 170, 170);
+}
+.drag-area .icon {
+  font-size: 100px;
+  color: #71c55d;
+}
+.drag-area header {
+  font-size: 30px;
+  font-weight: 300;
+  color: #71c55d;
+}
+.drag-area span {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 10px 0 15px 0;
+}
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  background: #71c55d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area i {
+  font-size: 100px;
+  color: #71c55d;
+}
+.drag-area h3 {
+  font-weight: 500;
   color: #71c55d;
 }
