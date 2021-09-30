@@ -580,9 +580,10 @@ section {
   transition: all 0.5s ease-in-out 0s;
 }
 #get-started .feature-block img {
-  height: 60px;
+  /* height: 60px; */
   margin-bottom: 30px;
-  width: 60px;
+  /* width: 60px; */
+  max-width: 40%;
 }
 @media (max-width: 991px) {
   #get-started .feature-block {
@@ -1375,4 +1376,19 @@ section {
 .drag-area h3 {
   font-weight: 500;
   color: #71c55d;
+}
+/* search */
+.search {
+  margin: 10px 0 25px;
+}
+.search button {
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  background: #71c55d;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
 }
