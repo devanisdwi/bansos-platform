@@ -1381,15 +1381,6 @@ section {
 .search {
   margin: 10px 0 25px;
 }
-.search i {
-  position: absolute;
-}
-.search input {
-  border-radius: 5px;
-}
-.icons {
-  padding: 10px;
-}
 .search button {
   padding: 10px 25px;
   font-size: 18px;
